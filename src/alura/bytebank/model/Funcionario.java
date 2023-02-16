@@ -1,4 +1,6 @@
-public class Funcionario {
+package alura.bytebank.model;
+
+public abstract class  Funcionario {
 
     private String nome;
     private String cpf;

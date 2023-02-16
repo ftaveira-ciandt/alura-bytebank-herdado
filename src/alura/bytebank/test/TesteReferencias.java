@@ -1,23 +1,27 @@
+package alura.bytebank.test;
+
+import alura.bytebank.model.ControleBonificacao;
+import alura.bytebank.model.Designer;
+import alura.bytebank.model.EditorVIdeo;
+import alura.bytebank.model.Funcionario;
+import alura.bytebank.model.Gerente;
+
 public class TesteReferencias {
 
     public static void main(String[] args) {
 
-        Gerente g1 = new Gerente();
+       final Gerente g1 = new Gerente();
         g1.setNome("Marcos");
         g1.setSalario(5000.0);
 
-        Funcionario f = new Funcionario();
-        f.setSalario(2000);
-
         EditorVIdeo ev = new EditorVIdeo();
-        f.setSalario(2500);
+        ev.setSalario(2500);
 
         Designer d = new Designer();
-        f.setSalario(2000);
+        d.setSalario(2000);
 
         ControleBonificacao controle = new ControleBonificacao();
         controle.registra(g1);
-        controle.registra(f);
         controle.registra(ev);
         controle.registra(d);
 
