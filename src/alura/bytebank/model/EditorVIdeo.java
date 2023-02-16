@@ -1,3 +1,7 @@
+package alura.bytebank.model;
+
+import alura.bytebank.model.Funcionario;
+
 public class EditorVIdeo extends Funcionario {
 
     public double getBonificacao() {

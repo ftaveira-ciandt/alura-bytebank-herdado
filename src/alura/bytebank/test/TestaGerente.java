@@ -1,3 +1,5 @@
+package alura.bytebank.test;
+
 public class TestaGerente {
 
     public static void main(String[] args) {

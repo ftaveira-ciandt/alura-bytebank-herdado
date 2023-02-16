@@ -1,3 +1,5 @@
+package alura.bytebank.model;
+
 public class Gerente extends Funcionario {
 
     private int senha;
