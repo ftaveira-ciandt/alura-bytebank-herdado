@@ -1,5 +1,7 @@
 package alura.bytebank.test;
 
+import alura.bytebank.model.Gerente;
+
 public class TestaGerente {
 
     public static void main(String[] args) {

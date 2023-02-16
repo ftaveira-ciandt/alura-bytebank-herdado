@@ -3,22 +3,18 @@ package alura.bytebank.model;
 import alura.bytebank.controller.AutenticacaoUtil;
 import alura.bytebank.controller.Autenticavel;
 
-import java.util.GregorianCalendar;
+public class Administrador extends Funcionario implements Autenticavel {
 
-public class Gerente extends Funcionario implements Autenticavel {
+    private final AutenticacaoUtil autenticador;
 
-
-    private AutenticacaoUtil autenticador;
-
-    public Gerente() {
+    public Administrador() {
         this.autenticador = new AutenticacaoUtil();
     }
 
-
-    public double getBonificacao() {
-        System.out.println("Chamando o metodo de bonificacao do gerente");
-        return super.getSalario();
+    @Override public double getBonificacao() {
+        return 50;
     }
+
 
     @Override public void setSenha(final int senha) {
         this.autenticador.setSenha(senha);
@@ -28,6 +24,7 @@ public class Gerente extends Funcionario implements Autenticavel {
         return this.autenticador.autentica(senha);
 
     }
-    }
+
+}
 
 
