@@ -10,6 +10,7 @@ public class Administrador extends Funcionario implements Autenticavel {
     }
 
     @Override public void setSenha(final int senha) {
+        this.senha = senha;
 
     }
 
