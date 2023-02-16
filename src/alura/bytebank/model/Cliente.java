@@ -1,19 +1,22 @@
 package alura.bytebank.model;
 
+import alura.bytebank.controller.AutenticacaoUtil;
+import alura.bytebank.controller.Autenticavel;
+
 public class Cliente implements Autenticavel {
 
-        private int senha;
+        private AutenticacaoUtil autenticador;
+
+        public Cliente() {
+            this.autenticador = new AutenticacaoUtil();
+    }
 
     @Override public void setSenha(final int senha) {
-        this.senha = senha;
+        this.autenticador.setSenha(senha);
     }
 
     @Override public boolean autentica(final int senha) {
-        if (this.senha == senha) {
-            return true;
-        } else {
-            return false;
-        }
+       return this.autenticador.autentica(senha);
 
     }
 

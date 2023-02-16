@@ -1,4 +1,4 @@
-package alura.bytebank.model;
+package alura.bytebank.controller;
 
 public abstract interface Autenticavel  {
 

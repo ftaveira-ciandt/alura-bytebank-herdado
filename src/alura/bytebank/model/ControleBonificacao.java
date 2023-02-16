@@ -1,6 +1,6 @@
 package alura.bytebank.model;
 
-import alura.bytebank.model.Funcionario;
+
 
 public class ControleBonificacao {
 

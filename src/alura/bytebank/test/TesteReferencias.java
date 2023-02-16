@@ -3,7 +3,6 @@ package alura.bytebank.test;
 import alura.bytebank.model.ControleBonificacao;
 import alura.bytebank.model.Designer;
 import alura.bytebank.model.EditorVIdeo;
-import alura.bytebank.model.Funcionario;
 import alura.bytebank.model.Gerente;
 
 public class TesteReferencias {

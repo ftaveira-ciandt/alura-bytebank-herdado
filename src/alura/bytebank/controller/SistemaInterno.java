@@ -1,7 +1,5 @@
 package alura.bytebank.controller;
 
-import alura.bytebank.model.Autenticavel;
-
 public class SistemaInterno {
 
     private int senha = 2222;
