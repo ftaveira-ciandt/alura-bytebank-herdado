@@ -1,6 +1,7 @@
 package alura.bytebank.test;
 
 import alura.bytebank.controller.SistemaInterno;
+import alura.bytebank.model.Administrador;
 import alura.bytebank.model.Gerente;
 
 public class TestaSistema {
@@ -9,8 +10,12 @@ public class TestaSistema {
         Gerente g = new Gerente();
         g.setSenha(2222);
 
+        Administrador adm = new Administrador();
+        adm.setSenha(3333);
+
         SistemaInterno si = new SistemaInterno();
         si.autentica(g);
+        si.autentica(adm);
 
     }
 
